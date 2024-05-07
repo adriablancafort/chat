@@ -148,7 +148,7 @@
     <div class="flex w-full p-4" @focusin="numOfInputRows = 5" @focusout="numOfInputRows = 1">
       <textarea class="p-2 overflow-x-hidden  w-full text-gray-900 bg-gray-50 rounded border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 :rows="numOfInputRows"
-                :placeholder="pending ? 'Answering...' : (settingsStore.apiKey.length === 0 ? 'Enter your API key in settings' : `Chat with ${settingsStore.model}...`)"
+                :placeholder="pending ? 'Answering...' : (settingsStore.apiKey.length === 0 ? 'Enter API key in settings' : `Ask me anything...`)"
                 ref="inputTextarea"
                 v-model="input"
                 @keydown.ctrl.enter="onSend"
