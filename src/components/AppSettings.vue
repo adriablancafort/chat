@@ -6,11 +6,13 @@
   import type {Settings} from '@/models/settings.model';
   import validator from 'validator';
 
-  const models = [
-      {name: 'gpt-3.5-turbo', value: 'gpt-3.5-turbo'},
-      {name: 'gpt-4-turbo-preview', value: 'gpt-4-turbo-preview'},
-      {name: 'gpt-4', value: 'gpt-4'},
-    ];
+const models = [
+  { name: 'gpt-3.5-turbo', value: 'gpt-3.5-turbo' },
+  { name: 'gpt-4-turbo-preview', value: 'gpt-4-turbo-preview' },
+  { name: 'gpt-4', value: 'gpt-4' },
+  { name: 'gpt-4o', value: 'gpt-4o' },
+  { name: 'gpt-4o-2024-05-13', value: 'gpt-4o-2024-05-13' },
+];
 
   const settingsStore = useSettingsStore();
 
